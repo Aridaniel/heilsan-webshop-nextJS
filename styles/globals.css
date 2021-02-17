@@ -14,3 +14,21 @@ a {
 * {
   box-sizing: border-box;
 }
+.price{
+
+font-style: italic;
+color: rgb(197, 197, 197); 
+font-weight: 200;
+    
+}
+p{
+  font-weight: 300;
+  font-family: 'Lato',sans-serif;
+  color: #333;
+}
+
+.inputProductCount{
+  margin-right: 9rem;
+  width: 8rem;
+}
+
