@@ -1,6 +1,8 @@
 //Import Client from shopify-buy depency
 import Client from 'shopify-buy'
 
+
+
 //Here is where i connect to the Shopify CMS system, in my shopify aacount I add the products
 const client = Client.buildClient({
     domain: 'heilsuvaran.myshopify.com',
