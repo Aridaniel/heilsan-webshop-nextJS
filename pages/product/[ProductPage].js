@@ -11,7 +11,7 @@ const Post = ({product}) => {
     const [image, setImage]= useState(product.images[0])
     const [quantity, setQuantity] = useState(0);
     
-
+    // Adding the product to a cart 
     const addToCart =  async ()=>{
         const storage = window.localStorage;
         let checkoutId= storage.getItem('checkoutId')
@@ -30,6 +30,7 @@ const Post = ({product}) => {
         storage.setItem('cart', JSON.stringify(cart))
         console.log('The cart is= ', {cart})
     }
+    //Displaying each product
     
   return ( <Grid  centered  >
             

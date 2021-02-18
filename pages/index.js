@@ -8,6 +8,7 @@ import Link from 'next/link'
 export default function Home({products}) {
   console.log(products)
   return (
+    // Product that display on the frontpage
     <>
     <div className={styles.container}>
       <Head>
@@ -34,21 +35,18 @@ export default function Home({products}) {
         );
       })}
       </Card.Group>
-
-
-      <Button basic color='green'>
-      Green
-    </Button>
   </div>
   </>
   )
 }
+
+
 
 export async function getServerSideProps() {
   // Fetch data from Shopify
   const products = await client.product.fetchAll();
 
   console.log({products});
-  // Pass data to the page via props
+  // Pass data to the page via props in function above
   return { props: { products: JSON.parse(JSON.stringify(products)) } };
 }
