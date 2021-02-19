@@ -1,10 +1,10 @@
-# Headless CMS /Next.js project connecting to shopify with shopify-buy
+# Next.js Webpage/shop project connecting to headless-cms shopify with shopify-buy depency.
 
 * I added few product on shopify, that will show on the webpage
 
 * You are able to add them into a cart, wich are stored in localstorage
 
-* UI is mostly made by sementic-ui depency
+* UI is mostly made by sementic-ui depency.
 
 
 
