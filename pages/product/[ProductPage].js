@@ -21,7 +21,7 @@ const Post = ({product}) => {
             checkoutId = checkout.id
             storage.setItem('checkoutId', checkoutId)
         }
-        console.log('Takki virkar...?')
+        console.log('Button works and creates a puts the product in the cart')
 
         const cart = await client.checkout.addLineItems(checkoutId, [{
             variantId: product.variants[0].id,
